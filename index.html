@@ -4,46 +4,49 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
     <title>Real Aj</title>
 </head>
-<body class="px-16 py-8">
-    <div class="bg-red-500 -z-99 w-screen h-screen absolute left-1 top-0 [clip-path:polygon(45%_100%,_70%_0%,_80%_100%)]"></div>
-    <div class="bg-red-500 -z-99 w-[30%] h-screen absolute top-0 right-0"></div>
+<body class="pl-16 pt-8">
+    <div class="bg-[var(--primary-color)] -z-99 w-[calc(100vw-4px)] h-screen absolute left-[4px] top-0 [clip-path:polygon(45%_100%,_70%_0%,_80%_100%)]"></div>
+    <div class="bg-[var(--primary-color)] -z-99 w-[calc(29%+18px)] h-screen absolute top-0 right-0"></div>
     <header>
-        <ul class="grid grid-cols-[200px_55%_150px_150px_300px]">
-            <li>REAL AJ</li>
-            <li class="col-start-3">Bikes</li>
-            <li class="col-start-4">About Us</li>
-            <li class="col-start-5">Service & Support</li>
+        <ul class="grid grid-cols-[200px_53%_150px_150px_300px] font-medium">
+            <li class="text-[var(--primary-color)]">REAL AJ</li>
+            <li class="col-start-3 text-[var(--dark-color)]">Bikes</li>
+            <li class="col-start-4 text-[var(--white-color)]">About Us</li>
+            <li class="col-start-5 text-[var(--white-color)]">Service & Support</li>
         </ul>
     </header>
     
-    <main class="grid grid-rows-[190px_350px_200px_1fr]">
-        <div class="row-start-2 justify-between">
-            <h2 class="text-7xl">Take Over the Streets,</h2>
-            <span class="text-7xl">Silently.</span>
-            <p class="text-xl mt-4">Join the revolution to make a difference for your life and the environment.</p>
-            <button class="mt-4 w-48 bg-red-500">Book a Test Ride</button>
-            <a href="#" class="ml-8">Learn More</a>
+    <main class="grid grid-rows-[190px_390px_100px_1fr]">
+        <div class="row-start-2 justify-between font-medium">
+            <h2 class="text-7xl mt-8 w-[800px] text-[var(--dark-color)] sm:text-sm">Take Over the Streets, <span class="text-[var(--primary-color)]">Silently</span>.</h2>
+            <p class="text-xl mt-8 w-[440px] text-[var(--gray-color)]">Join the revolution to make a difference for your life and the environment.</p>
+            <button class="mt-8 w-48 h-8 rounded-md bg-[var(--primary-color)] text-[var(--white-color)]">Book a Test Ride</button>
+            <a href="#" class="ml-8 text-[var(--primary-color)]">Learn More</a>
         </div>
         <div class="flex">
-            <img class="absolute right-32 -z-98" src="./img/Cycle Image 1.png" alt="">
-            <img class="absolute right-0 -z-98" src="./img/Cycle Image 2.png" alt="">
+            <img class="absolute mt-24 right-32 -z-98" src="./img/Cycle Image 1.png" alt="">
+            <img class="absolute mt-28 right-0 -z-98" src="./img/Cycle Image 2.png" alt="">
         </div>
 
-        <div class="row-start-4">
-            <div>
-                <span>BATERY RANGE</span>
-                <span>70 Km</span>
-                <span>ASSIST SPEED</span>
-                <span>25 Kmph</span>
+        <div class="flex gap-40 row-start-4 justify-center font-bold">
+            <div class="grid">
+                <span class="text-end text-[var(--gray-color)]">BATERY RANGE</span>
+                <span class="text-5xl text-end text-[var(--primary-color)]">70 Km</span>
+                <span class="text-end mt-8 mr-8 text-[var(--gray-color)]">ASSIST SPEED</span>
+                <span class="text-5xl mr-8 text-[var(--primary-color)]">25 Kmph</span>
             </div>
 
-            <div>
-                <span>CHARGING TIME</span>
-                <span>3.5 Hours</span>
-                <span>WEIGHT</span>
-                <span>16.9 Kg</span>
+            <div class="grid w-62">
+                <span class="ml-8 text-[var(--dark-color)]">CHARGING TIME</span>
+                <span class="text-5xl ml-8 text-[var(--white-color)] w-60">3.5 Hours</span>
+                <span class="mt-8 text-[var(--dark-color)]">WEIGHT</span>
+                <span class="text-5xl text-[var(--white-color)]">16.9 Kg</span>
             </div>
         </div>
         
