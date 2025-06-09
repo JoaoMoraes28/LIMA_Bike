@@ -1,3 +1,4 @@
+/* Variaveis de cor e fonte */
 :root {
   --primary-color: #FE6767;
   --dark-color: #545454;
@@ -11,7 +12,24 @@ body {
   font-family: var(--font-family);
 }
 
+/* Responsividade específica para o MAC */
+@media(min-width: 2560px) {
 
+  .fundoRetangulo {
+    width: 30.7vw;
+  }
+
+  li {
+    margin-left: 80px;
+    width: 150px;
+  }
+  
+  .caracteristicas {
+    margin-left: 30%;
+  }
+}
+
+/* Responsividade para desktop */
 @media(min-width: 1920px) {
 
   .imgBike1 {
@@ -31,6 +49,8 @@ body {
   }
 }
 
+
+/* Responsividade para tablet */
 @media(max-width: 1024px) {
 
   button {
@@ -40,7 +60,7 @@ body {
 
 }
 
-
+/* Responsividade mobile  */
 @media(max-width: 1023px) {
 
   body {
@@ -112,7 +132,7 @@ body {
   button {
     background-color: var(--white-color);
     color: var(--primary-color);
-    margin-top: 350px;
+    margin-top: 40vh;
     margin-left: 100px;
   }
 
